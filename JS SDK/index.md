@@ -1,6 +1,6 @@
 # JS API
 
-Bonbon exposes a JavaScript API to your pages so you can 
+Bonbon exposes a JavaScript API to your pages so you can customize your site's behavior.
 
 ## Event Lifecycle
 
