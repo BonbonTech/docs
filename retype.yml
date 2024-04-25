@@ -1,6 +1,6 @@
 input: .
 output: .retype
-url: https://developers.bonbon.tech
+url: https://docs.bonbon.tech
 branding:
   logo: static/bonbon_logo.png
   label: Docs
