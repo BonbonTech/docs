@@ -1,0 +1,12 @@
+input: .
+output: .retype
+url: https://developers.bonbon.tech
+branding:
+  logo: static/bonbon_logo.png
+  label: Docs
+  logoDark: static/logo-dark.png
+# links:
+# - text: Getting Started
+#   link: https://retype.com/guides/getting-started/
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
