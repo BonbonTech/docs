@@ -1,5 +1,9 @@
 # Getting Started
 
+<script>
+	document.getElementsByTagName("html")[0].classList.remove("dark")
+</script>
+
 Bonbon helps content creators <i>connect</i> and <i>engage</i> with their audiences through a suite of customizable tools that deliver real business impact with ease.
 
 ## Bonbon Web Tags
