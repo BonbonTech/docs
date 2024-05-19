@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.767368175784">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.769452390357">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../resources/css/retype.css?v=3.5.0.767368175784" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=3.5.0.769452390357" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.767368175784" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=3.5.0.769452390357" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.767368175784" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=3.5.0.769452390357" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -159,6 +159,33 @@
     </h1>
 </doc-anchor-target>
 <p>Bonbon exposes a JavaScript API to your pages so you can customize your site&#x27;s behavior.</p>
+<doc-anchor-target id="api-methods">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#api-methods">#</doc-anchor-trigger>
+        <span>API Methods</span>
+    </h2>
+</doc-anchor-target>
+<doc-anchor-target id="getting-the-earn-token">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#getting-the-earn-token">#</doc-anchor-trigger>
+        <span>Getting the Earn Token</span>
+    </h3>
+</doc-anchor-target>
+<p>You can access the current user&#x27;s earn token by calling</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">window.Bonbon.getEarnToken();</code></pre>
+</doc-codeblock></div>
+<p>Be careful, it will return falsey if the user is not logged in!</p>
+<doc-anchor-target id="spa">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#spa">#</doc-anchor-trigger>
+        <span>SPA</span>
+    </h3>
+</doc-anchor-target>
+<p>If your application is a Single Page Application (SPA), you must let Bonbon know by either <a href="">configuring your Web Tags for SPA</a> or by calling <code v-pre>enableSPA</code> after the <code v-pre>bonbon::initialized</code> event:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">window.Bonbon.enableSPA();</code></pre>
+</doc-codeblock></div>
 <doc-anchor-target id="event-lifecycle">
     <h2>
         <doc-anchor-trigger class="header-anchor-trigger" to="#event-lifecycle">#</doc-anchor-trigger>
@@ -188,9 +215,14 @@
 <td>Fired when Bonbon has fully initialized and is ready for interaction.</td>
 </tr>
 <tr>
+<td><code v-pre>bonbon::auth::login</code></td>
+<td>None</td>
+<td>Fired on when a user transitions from logged out to logged in</td>
+</tr>
+<tr>
 <td><code v-pre>bonbon::login</code></td>
 <td><code v-pre>{ detail: hashed_email: 'xxx', earn_token: 'yyy'}</code></td>
-<td>Fired whenever a user transitions from the logged out to logged in state and on every page view when a user is logged in.</td>
+<td>Fired on every page view when a user is logged in.</td>
 </tr>
 <tr>
 <td><code v-pre>bonbon::dismissed</code></td>
@@ -210,16 +242,6 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="spa">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#spa">#</doc-anchor-trigger>
-        <span>SPA</span>
-    </h2>
-</doc-anchor-target>
-<p>If your application is a Single Page Application (SPA), you must let Bonbon know by either <a href="">configuring your Web Tags for SPA</a> or by calling <code v-pre>enableSPA</code> after the <code v-pre>bonbon::initialized</code> event:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">window.Bonbon.enableSPA();</code></pre>
-</doc-codeblock></div>
 
                                 
                                 <!-- Required only on API pages -->
