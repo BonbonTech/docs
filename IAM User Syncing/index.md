@@ -24,6 +24,7 @@ Which will return you a user object like this:
 
 ```
 {
+  "id": "12345",
   "first_name": "Alyssa",
   "last_name": "P. Hacker",
   "postal": "90403",
