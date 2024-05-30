@@ -4,6 +4,16 @@ Bonbon exposes a JavaScript API to your pages so you can customize your site's b
 
 ## API Methods
 
+### Programmatically Opening a Rewards Modal
+
+You can programmatically open a Bonbon Reward modal by calling:
+
+```
+window.Bonbon.openModal({component: 'bonbon-rewards'}).load();
+```
+
+Be careful to ensure this happens after the `bonbon::initialized` event or else `window.Bonbon` will be undefined.
+
 ### Getting the Earn Token
 
 You can access the current user's earn token by calling
