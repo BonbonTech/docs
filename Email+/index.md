@@ -1,6 +1,6 @@
 # Bonbon Email+
 
-Bonbon Email+ maximizes the revenue you make on inventory that visits your site from your email marketing campaigns. Using addressable alternative IDs like UID2 and LiveRamp ATS, Bonbon Email+ can double the CPMs on page views from email visitors. 
+Bonbon Email+ maximizes the revenue you make on inventory that visits your site from your email marketing campaigns. Using addressable alternative IDs like UID2 and LiveRamp ATS, Bonbon Email+ is guaranteed to increase CPMs on page views from email visitors. 
 
 ## MailChimp
 
