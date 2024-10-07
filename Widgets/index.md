@@ -85,3 +85,5 @@ Renders the Bonbon SSO Button:
 	<bonbon-sso-button></bonbon-sso-button>
 </div>
 
+<bonbon-offer-grid></bonbon-offer-grid>
+
