@@ -16,7 +16,7 @@ The widget can be rendered inline like so:
 
 Renders:
 
-<div style="padding: 12px; background: #e1e1e1;width: 500px;margin-bottom:24px;">
+<div style="padding: 12px; background: #e1e1e1;margin-bottom:24px;">
 	<bonbon-rewards></bonbon-rewards>
 </div>
 
